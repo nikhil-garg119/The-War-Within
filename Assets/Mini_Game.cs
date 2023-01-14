@@ -12,32 +12,33 @@ public class Mini_Game : MonoBehaviour
     
     
     private KeyCode[] keys;
+    [SerializeField]private Text text;
     private KeyCode currentKey;
     [SerializeField]private Slider slider;
     void Start()
     {
         keys=new KeyCode[]{First_Key,Second_Key,Third_Key};
         currentKey=keys[0];
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentKey.ToString());
+        text.text=currentKey.ToString();
+        if(Input.GetKeyDown(currentKey))
+        slider.value+=0.1f;
         StartCoroutine(RandomKeyGenerator());
-        FillSlider();
+        if(slider.value==1)
+        text.text="YAYYYYYYYYYYYYYY";
+        
 
     }
     IEnumerator RandomKeyGenerator()
     {
-        currentKey=keys[Random.Range(0,3)];
-        yield return new WaitForSeconds(4f);
+        currentKey=keys[Random.Range(0,3)];       
+        yield return new WaitForSeconds(4000f);
+         
     }
-    void FillSlider()
-    {
-        slider.gameObject.SetActive(true);
-        if(Input.GetKeyDown(currentKey))
-        slider.value+=0.1f;
-        
-    }
+   
 }
