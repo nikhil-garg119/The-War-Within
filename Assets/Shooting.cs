@@ -11,10 +11,7 @@ public class Shooting : MonoBehaviour
     [SerializeField]private int noOfBullets;
     [SerializeField]private int ReloadTime;
     private int count=1;
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -24,16 +21,17 @@ public class Shooting : MonoBehaviour
     }
     IEnumerator Shoot()
     {
-        if(count==noOfBullets)
+       
+        
+         if(count==noOfBullets)
         {
-        count=0;
+        count=1;
         yield return new WaitForSeconds(ReloadTime);
         Debug.Log("Done");
         }
         GameObject go=Instantiate(bullet, muzzle.transform.position, muzzle.transform.rotation);
-        go.GetComponent<Rigidbody>().AddForce(transform.forward*bulletVelocity,ForceMode.Impulse);
+        go.GetComponent<Rigidbody>().AddForce(muzzle.transform.forward*bulletVelocity,ForceMode.Impulse);
         count++;
-        
         yield return null;
     }
 }

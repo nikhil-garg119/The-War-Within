@@ -23,21 +23,23 @@ public class Mini_Game : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        text.text=currentKey.ToString();
-        if(Input.GetKeyDown(currentKey))
-        slider.value+=0.1f;
+        
         StartCoroutine(RandomKeyGenerator());
         if(slider.value==1)
-        text.text="YAYYYYYYYYYYYYYY";
+        StopCoroutine(RandomKeyGenerator());
         
 
     }
     IEnumerator RandomKeyGenerator()
     {
-        currentKey=keys[Random.Range(0,3)];       
-        yield return new WaitForSeconds(4000f);
+           
+        yield return new WaitForSeconds(1f);
+        text.text=currentKey.ToString();
+        if(Input.GetKeyDown(currentKey))
+        slider.value+=0.1f;
+        currentKey=keys[Random.Range(0,3)];    
          
     }
    
