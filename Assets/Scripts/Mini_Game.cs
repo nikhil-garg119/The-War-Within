@@ -26,7 +26,6 @@ public class Mini_Game : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< Updated upstream:Assets/Mini_Game.cs
         text.text=currentKey.ToString();
         if(Input.GetKeyDown(currentKey))
         slider.value+=0.1f;
@@ -41,20 +40,6 @@ public class Mini_Game : MonoBehaviour
         currentKey=keys[Random.Range(0,3)];       
         yield return new WaitForSeconds(4000f);
          
-=======
-        
-        if(slider.value!=1){
-        text.text=currentKey.ToString();
-        if(Input.GetKeyDown(currentKey))
-        {
-        slider.value+=0.25f;
-        currentKey=keys[Random.Range(0,3)];    
-        }
-        }
-        if(slider.value!=0 && slider.value!=1)
-        slider.value-=0.0015f;
-
->>>>>>> Stashed changes:Assets/Scripts/Mini_Game.cs
     }
    
 }
