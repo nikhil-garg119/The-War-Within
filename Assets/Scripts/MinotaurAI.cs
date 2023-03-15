@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class WraithAI : MonoBehaviour
+public class MinotaurAI : MonoBehaviour
 {
     public NavMeshAgent agent;
 
@@ -17,7 +17,7 @@ public class WraithAI : MonoBehaviour
     
     bool walkPointSet;
     public float walkPointRange;
-    private Animator animator;
+    // private Animator animator;
 
     //Attacking
     public float timeBetweenAttacks;
@@ -32,7 +32,8 @@ public class WraithAI : MonoBehaviour
     {
         //player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
-        animator=GetComponent<Animator>();
+    //     animator=GetComponent<Animator>();
+    // 
     }
 
     private void Update()
@@ -45,7 +46,7 @@ public class WraithAI : MonoBehaviour
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) AttackPlayer();
-        //Wraiths Don't Attack
+       
 
     }
 
@@ -66,9 +67,9 @@ public class WraithAI : MonoBehaviour
     {
         //Calculate random point in range
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        //float randomX = Random.Range(-walkPointRange, walkPointRange);
+        float randomX = Random.Range(-walkPointRange, walkPointRange);
 
-        walkPoint = new Vector3(transform.position.x, transform.position.y, transform.position.z + randomZ);
+        walkPoint = new Vector3(transform.position.x+randomX, transform.position.y, transform.position.z + randomZ);
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
             walkPointSet = true;
@@ -85,16 +86,23 @@ public class WraithAI : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
-
+        
         if (!alreadyAttacked)
         {
             ///Attack code here
-            player.GetComponent<Damage>().health-=35f;
+            float f=Vector3.Distance(this.transform.position,player.transform.position);
+            GameObject go=Instantiate(projectile,this.transform.position,Quaternion.identity);
+            Rigidbody rb=go.GetComponent<Rigidbody>();
+            rb.AddForce(Vector3.up*15f,ForceMode.Impulse);
+            rb.AddForce(transform.forward*f/3,ForceMode.Impulse);
+            
+            
             ///End of attack code
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
+
     }
     private void ResetAttack()
     {
