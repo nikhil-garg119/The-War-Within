@@ -17,7 +17,7 @@ public class MinotaurAI : MonoBehaviour
     
     bool walkPointSet;
     public float walkPointRange;
-    // private Animator animator;
+    private Animator animator;
 
     //Attacking
     public float timeBetweenAttacks;
@@ -32,7 +32,7 @@ public class MinotaurAI : MonoBehaviour
     {
         //player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
-    //     animator=GetComponent<Animator>();
+        animator=GetComponentInChildren<Animator>();
     // 
     }
 
@@ -42,6 +42,7 @@ public class MinotaurAI : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
         //animator.SetBool("IsMoving",true);
+        
 
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
@@ -56,9 +57,10 @@ public class MinotaurAI : MonoBehaviour
 
         if (walkPointSet)
             agent.SetDestination(walkPoint);
-
+        
+        
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
-
+        animator.ResetTrigger("walk");
         //Walkpoint reached
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
@@ -77,6 +79,7 @@ public class MinotaurAI : MonoBehaviour
 
     private void ChasePlayer()
     {
+        animator.ResetTrigger("walk");
         agent.SetDestination(player.position);
     }
 
@@ -86,6 +89,7 @@ public class MinotaurAI : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
+        animator.SetTrigger("walk");
         
         if (!alreadyAttacked)
         {

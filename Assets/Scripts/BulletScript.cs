@@ -36,6 +36,10 @@ public class BulletScript : MonoBehaviour {
 					if(hit.transform.CompareTag("Wraiths")){
 					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
 					// hit.transform.gameObject.GetComponent<Damage>().health-=damage;
+					Destroy(gameObject);}
+					if(hit.transform.CompareTag("Minotaurs")){
+					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
+					hit.transform.gameObject.GetComponent<Damage>().health-=damage;
 					Destroy(gameObject);
 				}
 			}		
