@@ -14,20 +14,25 @@ public class SplashDamage : MonoBehaviour
     
 
     // Update is called once per frame
+    void Start()
+    {
+        player=GameObject.FindWithTag("Player");
+    }
     void Update()
     {
-        if(Physics.CheckSphere(this.transform.position,DamageRadius,whatIsPlayer))
+        if(Physics.CheckSphere(this.transform.position,DamageRadius,whatIsPlayer)){
         player.GetComponent<Damage>().health-=damage;
+        Debug.Log("Yes");
+        Destroy(this.gameObject);}
        
-        if(Physics.CheckSphere(this.transform.position,0.25f,whatIsGround))
-        
+        else if(Physics.CheckSphere(this.transform.position,0.25f,whatIsGround)) 
         Destroy(this.gameObject);
     }
     void DestroyMortar()
     {
          Debug.Log("YES");
         
-       // explosion.Play();
+
        
     }
 }
