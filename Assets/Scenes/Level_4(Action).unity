@@ -349,11 +349,11 @@ PrefabInstance:
       objectReference: {fileID: 2008027301}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: sightRange
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: attackRange
-      value: 75
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189708, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_RootOrder
@@ -714,11 +714,11 @@ PrefabInstance:
       objectReference: {fileID: 2008027301}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: sightRange
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: attackRange
-      value: 75
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189708, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_RootOrder
@@ -961,11 +961,11 @@ PrefabInstance:
       objectReference: {fileID: 2008027301}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: sightRange
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: attackRange
-      value: 75
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189708, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_RootOrder
@@ -1179,11 +1179,11 @@ PrefabInstance:
       objectReference: {fileID: 2008027301}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: sightRange
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: attackRange
-      value: 75
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189708, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_RootOrder
