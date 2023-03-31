@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Damage : MonoBehaviour
 {
@@ -20,6 +22,8 @@ public class Damage : MonoBehaviour
         slider.value=health;
         if(health<=0)
         {
+            if(this.gameObject.CompareTag("Player"))
+            SceneManager.LoadScene(0);
         Destroy(this.transform.gameObject);
         //Animation Code To-Be-Added-Later
 
