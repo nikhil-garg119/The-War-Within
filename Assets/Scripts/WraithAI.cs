@@ -59,8 +59,10 @@ public class WraithAI : MonoBehaviour
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
+        if (distanceToWalkPoint.magnitude < 1f || transform.position.x!=walkPoint.x)
             walkPointSet = false;
+            
+            
     }
     private void SearchWalkPoint()
     {

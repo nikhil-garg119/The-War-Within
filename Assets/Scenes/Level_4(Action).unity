@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 521beb99c8d4510408c818f8933ff94c, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -425,11 +425,15 @@ PrefabInstance:
       objectReference: {fileID: 2008027301}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: sightRange
-      value: 50
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: attackRange
-      value: 25
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189708, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_RootOrder
@@ -753,11 +757,15 @@ PrefabInstance:
       objectReference: {fileID: 2008027301}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: sightRange
-      value: 50
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: attackRange
-      value: 25
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189708, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_RootOrder
@@ -1052,11 +1060,15 @@ PrefabInstance:
       objectReference: {fileID: 2008027301}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: sightRange
-      value: 50
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: attackRange
-      value: 25
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189708, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_RootOrder
@@ -1137,11 +1149,15 @@ PrefabInstance:
       objectReference: {fileID: 2008027301}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: sightRange
-      value: 50
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: attackRange
-      value: 25
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189708, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_RootOrder
@@ -1625,11 +1641,15 @@ PrefabInstance:
       objectReference: {fileID: 2008027301}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: sightRange
-      value: 50
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: attackRange
-      value: 25
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189708, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_RootOrder
@@ -1843,11 +1863,15 @@ PrefabInstance:
       objectReference: {fileID: 2008027301}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: sightRange
-      value: 50
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: attackRange
-      value: 25
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189708, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_RootOrder
