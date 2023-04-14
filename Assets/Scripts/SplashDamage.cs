@@ -6,7 +6,7 @@ public class SplashDamage : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]private GameObject player;
-    [SerializeField]private GlobalVolume vol;
+    [SerializeField]private GameObject vol;
     [SerializeField]private LayerMask whatIsPlayer;
     [SerializeField]private LayerMask whatIsGround;
     [SerializeField]private float DamageRadius;
