@@ -5,7 +5,6 @@ public class BulletScript : MonoBehaviour {
 
 	[Tooltip("Furthest distance bullet will look for target")]
 	public float maxDistance = 1000000;
-	public float damage;
 	RaycastHit hit;
 	[Tooltip("Prefab of wall damange hit. The object needs 'LevelPart' tag to create decal on it.")]
 	public GameObject decalHitWall;
@@ -31,15 +30,6 @@ public class BulletScript : MonoBehaviour {
 				}
 				if(hit.transform.tag == "Dummie"){
 					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
-					Destroy(gameObject);
-				}
-					if(hit.transform.CompareTag("Wraiths")){
-					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
-					// hit.transform.gameObject.GetComponent<Damage>().health-=damage;
-					Destroy(gameObject);}
-					if(hit.transform.CompareTag("Minotaurs")){
-					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
-					hit.transform.gameObject.GetComponent<Damage>().health-=damage;
 					Destroy(gameObject);
 				}
 			}		

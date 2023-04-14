@@ -88,7 +88,7 @@ public class GunScript : MonoBehaviour {
 
 		PositionGun();
 
-		 Shooting();
+		Shooting();
 		MeeleAttack();
 		LockCameraWhileMelee ();
 

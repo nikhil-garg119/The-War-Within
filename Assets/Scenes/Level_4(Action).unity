@@ -286,6 +286,10 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0.40943396
       objectReference: {fileID: 0}
+    - target: {fileID: 2024722, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2306104, guid: c391f12a928274acab8576bb6030641d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -334,6 +338,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 15725247685604552, guid: c391f12a928274acab8576bb6030641d, type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 1739404076}
     - target: {fileID: 4793275749213269154, guid: c391f12a928274acab8576bb6030641d, type: 3}
       propertyPath: health
       value: 100
@@ -1422,7 +1430,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 9b50af24a9d1aca45b01fba01a7482be, type: 2}
+  sharedProfile: {fileID: 11400000, guid: e5950cc5b6a24ab4282ea82ac8772fe8, type: 2}
 --- !u!4 &1346977712
 Transform:
   m_ObjectHideFlags: 0
