@@ -18,27 +18,20 @@ public class SplashDamage : MonoBehaviour
     void Start()
     {
         player=GameObject.FindWithTag("Player");
+        vol=GameObject.Find("Global Volume");
     }
     void Update()
     {
         if(Physics.CheckSphere(this.transform.position,DamageRadius,whatIsPlayer)){
         player.GetComponent<Damage>().health-=damage;
-        
-        Debug.Log("Yes");
+        vol.SetActive(true);
         Destroy(this.gameObject);}
        
-        else if(Physics.CheckSphere(this.transform.position,0.25f,whatIsGround)) 
+        else if(Physics.CheckSphere(this.transform.position,0.25f,whatIsGround)) {
+            vol.SetActive(false);
         Destroy(this.gameObject);
     }
-    void DestroyMortar()
-    {
-         Debug.Log("YES");
-        
-
-       
     }
-    // IEnumerator enableVignette()
-    // {
-    //     vol.
-    // }
+
+  
 }
