@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class SplashDamage : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]private GameObject player;
-    [SerializeField]private GameObject vol;
+    public GameObject vol;
     [SerializeField]private LayerMask whatIsPlayer;
     [SerializeField]private LayerMask whatIsGround;
     [SerializeField]private float DamageRadius;
@@ -24,14 +25,20 @@ public class SplashDamage : MonoBehaviour
     {
         if(Physics.CheckSphere(this.transform.position,DamageRadius,whatIsPlayer)){
         player.GetComponent<Damage>().health-=damage;
-        vol.SetActive(true);
-        Destroy(this.gameObject);}
+        
+        Destroy(this.gameObject);
+        StartCoroutine("VignetteEffect");}
        
-        else if(Physics.CheckSphere(this.transform.position,0.25f,whatIsGround)) {
-            vol.SetActive(false);
+        else if(Physics.CheckSphere(this.transform.position,0.25f,whatIsGround))
         Destroy(this.gameObject);
     }
+    IEnumerator VignetteEffect()
+    {
+        vol.GetComponent<Volume>().weight=1;
+        yield return new WaitForSeconds(1f);
+        vol.GetComponent<Volume>().weight=0;
     }
+    
 
   
 }
