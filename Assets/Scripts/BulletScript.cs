@@ -32,7 +32,9 @@ public class BulletScript : MonoBehaviour {
 					Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
 					Destroy(gameObject);
 				}
-			}		
+			}
+			if(hit.transform.CompareTag("Minotaurs"))
+				hit.transform.gameObject.GetComponent<Damage>().health-=10f;
 			Destroy(gameObject);
 		}
 		Destroy(gameObject, 0.1f);

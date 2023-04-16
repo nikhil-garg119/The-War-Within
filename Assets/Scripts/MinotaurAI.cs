@@ -22,6 +22,7 @@ public class MinotaurAI : MonoBehaviour
     //Attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked;
+    bool alreadyCharged;
     public GameObject projectile;
 
     //States
@@ -46,8 +47,11 @@ public class MinotaurAI : MonoBehaviour
 
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();
-       
+        if (playerInAttackRange && playerInSightRange) {
+            if((int)Random.Range(0,2)==1)AttackPlayer();
+            else
+            ChasePlayer();
+        }
 
     }
 
@@ -108,9 +112,28 @@ public class MinotaurAI : MonoBehaviour
         }
 
     }
+    private void ChargePlayer()
+    {
+        agent.SetDestination(player.transform.position);
+        agent.speed*=3f;
+
+        transform.LookAt(player);
+        animator.SetTrigger("walk");
+        
+        if(Vector3.Distance(player.transform.position,transform.position)<=1f)
+        player.GetComponent<Damage>().health-=20f;
+            alreadyCharged = true;
+            Invoke(nameof(ResetCharge), timeBetweenAttacks);
+        }
+
+    
+    private void ResetCharge(){
+        alreadyCharged = false;
+        agent.speed/=3f;
+    }
     private void ResetAttack()
     {
-        alreadyAttacked = false;
+        alreadyAttacked=false;
     }
 
     // public void TakeDamage(int damage)
