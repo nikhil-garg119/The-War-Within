@@ -25,20 +25,15 @@ public class SplashDamage : MonoBehaviour
     {
         if(Physics.CheckSphere(this.transform.position,DamageRadius,whatIsPlayer)){
         player.GetComponent<Damage>().health-=damage;
-        
+        vol.GetComponent<Volume>().weight=1;
         Destroy(this.gameObject);
-        StartCoroutine("VignetteEffect");}
+        }
        
         else if(Physics.CheckSphere(this.transform.position,0.25f,whatIsGround))
         Destroy(this.gameObject);
     }
-    IEnumerator VignetteEffect()
-    {
-        vol.GetComponent<Volume>().weight=1;
-        yield return new WaitForSeconds(1f);
-        vol.GetComponent<Volume>().weight=0;
+   
     }
     
 
-  
-}
+

@@ -10,7 +10,10 @@ public class DisableVol : MonoBehaviour
     {
         StartCoroutine("Disabling");
     }
-
+    void Update()
+    {
+        this.GetComponent<Volume>().weight-=0.01f;
+    }
     // Update is called once per frame
    IEnumerator Disabling()
    {

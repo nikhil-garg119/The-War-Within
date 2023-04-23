@@ -48,9 +48,9 @@ public class MinotaurAI : MonoBehaviour
         if (!playerInSightRange && !playerInAttackRange) Patroling();
         if (playerInSightRange && !playerInAttackRange) ChasePlayer();
         if (playerInAttackRange && playerInSightRange) {
-            if((int)Random.Range(0,2)==1)AttackPlayer();
-            else
-            ChasePlayer();
+            // if((int)Random.Range(0,2)==1)AttackPlayer();
+            // else
+            ChargePlayer();
         }
 
     }
@@ -114,26 +114,32 @@ public class MinotaurAI : MonoBehaviour
     }
     private void ChargePlayer()
     {
-        agent.SetDestination(player.transform.position);
-        agent.speed*=3f;
+       
 
         transform.LookAt(player);
         animator.SetTrigger("walk");
         
-        if(Vector3.Distance(player.transform.position,transform.position)<=1f)
-        player.GetComponent<Damage>().health-=20f;
+        if (!alreadyCharged)
+        {
+             agent.SetDestination(player.transform.position);
+            agent.speed*=3f;
+            if(Vector3.Distance(player.transform.position,transform.position)<=1f){
+            player.GetComponent<Damage>().health-=20f;
             alreadyCharged = true;
-            Invoke(nameof(ResetCharge), timeBetweenAttacks);
-        }
 
+            Invoke(nameof(ResetCharge), timeBetweenAttacks);}
+        }
+    }
     
     private void ResetCharge(){
         alreadyCharged = false;
+        alreadyAttacked=true;
         agent.speed/=3f;
     }
     private void ResetAttack()
     {
         alreadyAttacked=false;
+        alreadyCharged=true;
     }
 
     // public void TakeDamage(int damage)
