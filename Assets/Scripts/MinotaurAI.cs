@@ -26,8 +26,8 @@ public class MinotaurAI : MonoBehaviour
     public GameObject projectile;
 
     //States
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
+    public float sightRange, attackRange,chargeRange;
+    public bool playerInSightRange, playerInAttackRange, playerInChargeRange;
 
     private void Awake()
     {
@@ -42,16 +42,17 @@ public class MinotaurAI : MonoBehaviour
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
+        playerInChargeRange = Physics.CheckSphere(transform.position, chargeRange , whatIsPlayer);
         //animator.SetBool("IsMoving",true);
         
 
-        if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) {
-            // if((int)Random.Range(0,2)==1)AttackPlayer();
-            // else
+        if (!playerInSightRange && !playerInChargeRange && !playerInAttackRange) Patroling();
+        if (playerInSightRange && !playerInChargeRange && !playerInAttackRange) ChasePlayer();
+        if (playerInChargeRange && playerInAttackRange && playerInSightRange) 
+            
             ChargePlayer();
-        }
+        if(!playerInChargeRange && playerInAttackRange && playerInSightRange)
+        AttackPlayer();
 
     }
 
@@ -159,5 +160,7 @@ public class MinotaurAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackRange);
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, sightRange);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, chargeRange);
     }
 }
