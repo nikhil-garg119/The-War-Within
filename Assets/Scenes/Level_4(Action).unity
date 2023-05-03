@@ -445,7 +445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189706, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189706, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_TagString
@@ -465,7 +465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: chargeRange
-      value: 75
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: timeBetweenAttacks
@@ -517,11 +517,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3981376359556085195, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4559155788774654704, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8846469221116886348, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: health
@@ -785,7 +785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189706, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189706, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_TagString
@@ -805,7 +805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: chargeRange
-      value: 75
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: timeBetweenAttacks
@@ -857,11 +857,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3981376359556085195, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4559155788774654704, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8846469221116886348, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: health
@@ -1189,7 +1189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189706, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189706, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_TagString
@@ -1209,7 +1209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: chargeRange
-      value: 75
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: timeBetweenAttacks
@@ -1261,11 +1261,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3981376359556085195, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4559155788774654704, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8846469221116886348, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: health
@@ -1286,7 +1286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189706, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189706, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_TagString
@@ -1306,7 +1306,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: chargeRange
-      value: 75
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: timeBetweenAttacks
@@ -1358,11 +1358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3981376359556085195, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4559155788774654704, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8846469221116886348, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: health
@@ -1885,7 +1885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: chargeRange
-      value: 75
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: timeBetweenAttacks
@@ -2095,7 +2095,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189706, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189706, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_TagString
@@ -2115,7 +2115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: chargeRange
-      value: 75
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 3542216066293189707, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: timeBetweenAttacks
@@ -2167,11 +2167,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3981376359556085195, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4559155788774654704, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8846469221116886348, guid: 8cbd34f510351804c964aa7ec5dfafaa, type: 3}
       propertyPath: health
