@@ -103,7 +103,7 @@ public class MinotaurAI : MonoBehaviour
             GameObject go=Instantiate(projectile,this.transform.position,Quaternion.identity);
             Rigidbody rb=go.GetComponent<Rigidbody>();
             rb.AddForce(Vector3.up*15f,ForceMode.Impulse);
-            rb.AddForce(transform.forward*f/3,ForceMode.Impulse);
+            rb.AddForce(transform.forward*f/3.1f,ForceMode.Impulse);
             
             
             ///End of attack code
@@ -118,11 +118,12 @@ public class MinotaurAI : MonoBehaviour
        
 
         transform.LookAt(player);
+        Vector3 playerPos=player.transform.position;
         animator.SetTrigger("walk");
         
         if (!alreadyCharged)
         {
-             agent.SetDestination(player.transform.position);
+             agent.SetDestination(playerPos);
             agent.speed*=3f;
             if(Vector3.Distance(player.transform.position,transform.position)<=1f){
             player.GetComponent<Damage>().health-=20f;
@@ -134,13 +135,13 @@ public class MinotaurAI : MonoBehaviour
     
     private void ResetCharge(){
         alreadyCharged = false;
-        alreadyAttacked=true;
+        
         agent.speed/=3f;
     }
     private void ResetAttack()
     {
         alreadyAttacked=false;
-        alreadyCharged=true;
+        
     }
 
     // public void TakeDamage(int damage)
