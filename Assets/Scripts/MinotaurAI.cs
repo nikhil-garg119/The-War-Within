@@ -1,4 +1,4 @@
-﻿
+
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -35,7 +35,7 @@ public class MinotaurAI : MonoBehaviour
         //player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
         animator=GetComponentInChildren<Animator>();
-        lineRenderer=GetComponent<LineRenderer>();
+        //lineRenderer=GetComponent<LineRenderer>();
     // 
     }
 
@@ -126,8 +126,8 @@ public class MinotaurAI : MonoBehaviour
         if (!alreadyCharged)
         {
              agent.SetDestination(playerPos);
-             lineRenderer.SetPosition(0,this.transform.position);
-             lineRenderer.SetPosition(1,playerPos);
+            //  lineRenderer.SetPosition(0,this.transform.position);
+            //  lineRenderer.SetPosition(1,playerPos);
             agent.speed*=3f;
             
             if(Vector3.Distance(player.transform.position,transform.position)<=1f){
