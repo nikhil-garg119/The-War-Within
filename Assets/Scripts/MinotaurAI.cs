@@ -17,6 +17,7 @@ public class MinotaurAI : MonoBehaviour
     
     bool walkPointSet;
     public float walkPointRange;
+    private LineRenderer lineRenderer;
     private Animator animator;
 
     //Attacking
@@ -34,6 +35,7 @@ public class MinotaurAI : MonoBehaviour
         //player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
         animator=GetComponentInChildren<Animator>();
+        lineRenderer=GetComponent<LineRenderer>();
     // 
     }
 
@@ -124,7 +126,10 @@ public class MinotaurAI : MonoBehaviour
         if (!alreadyCharged)
         {
              agent.SetDestination(playerPos);
+             lineRenderer.SetPosition(0,this.transform.position);
+             lineRenderer.SetPosition(1,playerPos);
             agent.speed*=3f;
+            
             if(Vector3.Distance(player.transform.position,transform.position)<=1f){
             player.GetComponent<Damage>().health-=20f;
             alreadyCharged = true;
