@@ -97,6 +97,7 @@ public class MinotaurAI : MonoBehaviour
 
         transform.LookAt(player);
         animator.SetTrigger("walk");
+        animator.SetTrigger("Charge");
         
         if (!alreadyAttacked)
         {
@@ -121,7 +122,8 @@ public class MinotaurAI : MonoBehaviour
 
         transform.LookAt(player);
         Vector3 playerPos=player.transform.position;
-        animator.SetTrigger("walk");
+        animator.ResetTrigger("walk");
+        animator.SetTrigger("Charge");
         
         if (!alreadyCharged)
         {
