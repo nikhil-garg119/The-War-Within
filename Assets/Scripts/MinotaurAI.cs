@@ -34,7 +34,7 @@ public class MinotaurAI : MonoBehaviour
     {
         //player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
-        animator=GetComponentInChildren<Animator>();
+        //animator=GetComponentInChildren<Animator>();
         //lineRenderer=GetComponent<LineRenderer>();
     // 
     }
@@ -67,7 +67,7 @@ public class MinotaurAI : MonoBehaviour
         
         
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
-        animator.ResetTrigger("walk");
+        //animator.ResetTrigger("walk");
         //Walkpoint reached
         if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
@@ -86,7 +86,7 @@ public class MinotaurAI : MonoBehaviour
 
     private void ChasePlayer()
     {
-        animator.ResetTrigger("walk");
+        //animator.ResetTrigger("walk");
         agent.SetDestination(player.position);
     }
 
@@ -96,7 +96,7 @@ public class MinotaurAI : MonoBehaviour
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
-        animator.SetTrigger("walk");
+        //animator.SetTrigger("walk");
         
         if (!alreadyAttacked)
         {
@@ -121,7 +121,7 @@ public class MinotaurAI : MonoBehaviour
 
         transform.LookAt(player);
         Vector3 playerPos=player.transform.position;
-        animator.SetTrigger("walk");
+        //animator.SetTrigger("walk");
         
         if (!alreadyCharged)
         {
