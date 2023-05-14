@@ -1250,7 +1250,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5700869835208275896, guid: 4241ea30dbee19d46bc57a00b345d028, type: 3}
+  - {fileID: 2100000, guid: 565a3425a1d18224da864f597f3c22db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2334,9 +2334,9 @@ MonoBehaviour:
   mls: {fileID: 0}
   walkingSpeed: 3
   runningSpeed: 5
-  bulletsIHave: 300
-  bulletsInTheGun: 30
-  amountOfBulletsPerLoad: 30
+  bulletsIHave: 9999
+  bulletsInTheGun: 80
+  amountOfBulletsPerLoad: 80
   currentGunPosition: {x: 0, y: 0, z: 0}
   restPlacePosition: {x: -0.07, y: -0.06, z: 0.42}
   aimPlacePosition: {x: 0, y: -0.03, z: 0.3}
