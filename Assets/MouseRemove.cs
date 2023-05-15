@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageIndicator : MonoBehaviour
+public class MouseRemove : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField]GameObject player;
-    
     void Start()
     {
-        
+        Cursor.lockState=CursorLockMode.Locked;
+        Cursor.visible=false;
     }
 
     // Update is called once per frame
