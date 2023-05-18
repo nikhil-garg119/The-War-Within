@@ -15,4 +15,10 @@ public class SceneChanger : MonoBehaviour
 
 SceneManager.LoadScene(x);
 }
+void OnCollisionEnter(Collision other)
+{
+    if(other.gameObject.CompareTag("Player"))
+    SceneManager.LoadScene(1);
+}
+
 }

@@ -707,7 +707,7 @@ GameObject:
   - component: {fileID: 5630669541918252024}
   m_Layer: 0
   m_Name: Minotaur
-  m_TagString: Untagged
+  m_TagString: Minotaurs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -786,7 +786,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 3542216066293189704}
-  player: {fileID: 0}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 16
@@ -796,11 +795,11 @@ MonoBehaviour:
   health: 0
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 10
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 1
   projectile: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
-  sightRange: 10
-  attackRange: 10
-  chargeRange: 0
+  sightRange: 125
+  attackRange: 100
+  chargeRange: 35
   playerInSightRange: 0
   playerInAttackRange: 0
   playerInChargeRange: 0

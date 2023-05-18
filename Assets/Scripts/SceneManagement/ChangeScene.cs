@@ -8,6 +8,7 @@ public class ChangeScene : MonoBehaviour
     // Start is called before the first frame update
     public GameObject[] transitionProps;
     public GameObject[] levelObjects;//Mainly Wraiths
+    public GameObject ground;
     public GameObject player;
     public float TimeRotation;
     private Quaternion FinalRotation;
@@ -43,9 +44,14 @@ public class ChangeScene : MonoBehaviour
         }
         player.GetComponent<PlayerMovementScript>().enabled=false;
         player.GetComponent<MouseLookScript>().enabled=false;
-        
+        StartCoroutine("DisGround");
         
         
     
+    }
+    IEnumerator DisGround()
+    {
+        yield return new WaitForSeconds(3f);
+        ground.SetActive(false);
     }
 }

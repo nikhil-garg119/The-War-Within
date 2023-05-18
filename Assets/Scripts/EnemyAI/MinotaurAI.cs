@@ -6,7 +6,7 @@ public class MinotaurAI : MonoBehaviour
 {
     public NavMeshAgent agent;
 
-    public Transform player;
+    private Transform player;
 
     public LayerMask whatIsGround, whatIsPlayer;
 
@@ -35,6 +35,7 @@ public class MinotaurAI : MonoBehaviour
         //player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
         animator=GetComponentInChildren<Animator>();
+        player=GameObject.FindWithTag("Player").transform;
         //lineRenderer=GetComponent<LineRenderer>();
     // 
     }

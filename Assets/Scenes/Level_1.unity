@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0
+  m_AmbientIntensity: 8
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: b984d40b68487cf4893a2832d79990bf, type: 2}
@@ -2937,8 +2937,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745381158}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -82.95, y: 0, z: 4.2499695}
-  m_LocalScale: {x: 0.49999997, y: 10, z: 10}
+  m_LocalPosition: {x: -82.95, y: -16.72, z: 4.2499695}
+  m_LocalScale: {x: 0.49999997, y: 43.555, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1873818180}
@@ -3104,6 +3104,73 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800977767}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &835457826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 835457829}
+  - component: {fileID: 835457828}
+  - component: {fileID: 835457827}
+  - component: {fileID: 835457830}
+  m_Layer: 0
+  m_Name: 'LevelTransition '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &835457827
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835457826}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.7047825, y: 1, z: 8.457939}
+  m_Center: {x: 1.0321966, y: 0, z: 2.1058998}
+--- !u!33 &835457828
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835457826}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &835457829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835457826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.974, y: -13.73, z: -72.78}
+  m_LocalScale: {x: 3.2328, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &835457830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835457826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19caee07299364548b9c2371f23b93a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &842893115
 GameObject:
   m_ObjectHideFlags: 0
@@ -10859,7 +10926,7 @@ GameObject:
   - component: {fileID: 1397913011}
   - component: {fileID: 1397913010}
   m_Layer: 0
-  m_Name: LevelTransition
+  m_Name: CutSceneTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10887,6 +10954,7 @@ MonoBehaviour:
   - {fileID: 4581718617845848955}
   - {fileID: 4581718617685762332}
   - {fileID: 4581718617028732769}
+  ground: {fileID: 2069056925}
   player: {fileID: 555995680}
   TimeRotation: 1
   Timer: 0
@@ -12699,8 +12767,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931933664}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -79.77, y: 0, z: 31.849983}
-  m_LocalScale: {x: 0.49999997, y: 10, z: 65}
+  m_LocalPosition: {x: -79.77, y: -26.9, z: 31.849983}
+  m_LocalScale: {x: 0.49999997, y: 63.613, z: 65}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1873818180}
