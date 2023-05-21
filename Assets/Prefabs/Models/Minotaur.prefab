@@ -799,7 +799,7 @@ MonoBehaviour:
   projectile: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
   sightRange: 125
   attackRange: 100
-  chargeRange: 35
+  chargeRange: 40
   playerInSightRange: 0
   playerInAttackRange: 0
   playerInChargeRange: 0

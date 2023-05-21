@@ -1,6 +1,7 @@
 ﻿
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Audio;
 
 public class WraithAI : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class WraithAI : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
 
     public float health;
+    AudioSource audio;
+    public AudioClip audioClip;
+    AudioClip originalClip;
 
     //Patroling
     public Vector3 walkPoint;
@@ -33,6 +37,8 @@ public class WraithAI : MonoBehaviour
         //player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
         animator=GetComponent<Animator>();
+        audio=GetComponent<AudioSource>();
+        originalClip=audio.clip;
     }
 
     private void Update()
@@ -93,7 +99,8 @@ public class WraithAI : MonoBehaviour
             ///Attack code here
             player.GetComponent<Damage>().health-=35f;
             ///End of attack code
-
+            audio.clip=audioClip;
+            audio.Play();
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
@@ -101,6 +108,7 @@ public class WraithAI : MonoBehaviour
     private void ResetAttack()
     {
         alreadyAttacked = false;
+        audio.clip=originalClip;
     }
 
     // public void TakeDamage(int damage)

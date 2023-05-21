@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 8
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: b984d40b68487cf4893a2832d79990bf, type: 2}
@@ -328,7 +328,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -425,7 +425,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -522,7 +522,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -849,7 +849,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -946,7 +946,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1043,7 +1043,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1216,7 +1216,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1377,7 +1377,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1602,7 +1602,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2332,7 +2332,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2429,7 +2429,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2850,6 +2850,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   health: 0
+  audioClip: {fileID: 0}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 20
   timeBetweenAttacks: 5
@@ -2977,7 +2978,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3074,7 +3075,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8123,7 +8124,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8377,7 +8378,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8474,7 +8475,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8571,7 +8572,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8668,7 +8669,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8765,7 +8766,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8862,7 +8863,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8959,7 +8960,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9125,7 +9126,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9302,7 +9303,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9399,7 +9400,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9496,7 +9497,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9593,7 +9594,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10329,7 +10330,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10656,7 +10657,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10753,7 +10754,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10883,7 +10884,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11061,7 +11062,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11158,7 +11159,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11287,7 +11288,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11384,7 +11385,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11481,7 +11482,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11719,7 +11720,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11853,7 +11854,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11982,7 +11983,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12079,7 +12080,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12273,7 +12274,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12370,7 +12371,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12467,7 +12468,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12710,7 +12711,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12807,7 +12808,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12904,7 +12905,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13001,7 +13002,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13353,7 +13354,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dadbc3788972a6045b031071a805bf82, type: 2}
+  - {fileID: 2100000, guid: 3678d966bbe5c1243860a33dc25ea136, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17361,6 +17362,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   health: 0
+  audioClip: {fileID: 8300000, guid: 951072175231d9a4d8a70762a4de9a77, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 20
   timeBetweenAttacks: 5
@@ -17390,6 +17392,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   health: 0
+  audioClip: {fileID: 8300000, guid: 951072175231d9a4d8a70762a4de9a77, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 20
   timeBetweenAttacks: 5
@@ -17419,6 +17422,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   health: 0
+  audioClip: {fileID: 8300000, guid: 951072175231d9a4d8a70762a4de9a77, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 20
   timeBetweenAttacks: 5
@@ -17448,6 +17452,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   health: 0
+  audioClip: {fileID: 8300000, guid: 951072175231d9a4d8a70762a4de9a77, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 20
   timeBetweenAttacks: 5
@@ -17477,6 +17482,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   health: 0
+  audioClip: {fileID: 8300000, guid: 951072175231d9a4d8a70762a4de9a77, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 20
   timeBetweenAttacks: 5
@@ -18523,6 +18529,7 @@ GameObject:
   - component: {fileID: 2726974118277078570}
   - component: {fileID: 2099660430406221258}
   - component: {fileID: 6179955377941767923}
+  - component: {fileID: 9007069523967953851}
   m_Layer: 0
   m_Name: G1_Black
   m_TagString: Wraiths
@@ -18575,6 +18582,7 @@ GameObject:
   - component: {fileID: 2726974118218596603}
   - component: {fileID: 2099660430363468571}
   - component: {fileID: 6179955377949882402}
+  - component: {fileID: 9007069523925734764}
   m_Layer: 0
   m_Name: G1_Black (4)
   m_TagString: Wraiths
@@ -18645,6 +18653,7 @@ GameObject:
   - component: {fileID: 2726974118563436631}
   - component: {fileID: 2099660428814646199}
   - component: {fileID: 6179955376411467918}
+  - component: {fileID: 9007069524656508360}
   m_Layer: 0
   m_Name: G1_Black (1)
   m_TagString: Wraiths
@@ -18783,6 +18792,7 @@ GameObject:
   - component: {fileID: 2726974119057990192}
   - component: {fileID: 2099660428521636304}
   - component: {fileID: 6179955376571521769}
+  - component: {fileID: 9007069524229306273}
   m_Layer: 0
   m_Name: G1_Black (2)
   m_TagString: Wraiths
@@ -18825,6 +18835,7 @@ GameObject:
   - component: {fileID: 2726974119408795403}
   - component: {fileID: 2099660429139893483}
   - component: {fileID: 6179955377193764818}
+  - component: {fileID: 9007069524981639836}
   m_Layer: 0
   m_Name: G1_Black (3)
   m_TagString: Wraiths
@@ -20637,6 +20648,102 @@ NavMeshAgent:
   m_BaseOffset: 0.23
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!82 &9007069523925734764
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4581718617070434736}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7fee674245a6add4cba62ba67ed85e28, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!195 &9007069523967953850
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20659,6 +20766,102 @@ NavMeshAgent:
   m_BaseOffset: 0.23
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!82 &9007069523967953851
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4581718617028732769}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7fee674245a6add4cba62ba67ed85e28, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!195 &9007069524229306272
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20681,6 +20884,102 @@ NavMeshAgent:
   m_BaseOffset: 0.23
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!82 &9007069524229306273
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4581718617845848955}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7fee674245a6add4cba62ba67ed85e28, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!195 &9007069524656508359
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20703,6 +21002,102 @@ NavMeshAgent:
   m_BaseOffset: 0.23
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!82 &9007069524656508360
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4581718617685762332}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7fee674245a6add4cba62ba67ed85e28, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!195 &9007069524981639835
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20725,6 +21120,102 @@ NavMeshAgent:
   m_BaseOffset: 0.23
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!82 &9007069524981639836
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4581718618430441024}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7fee674245a6add4cba62ba67ed85e28, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!224 &9165669046247062264
 RectTransform:
   m_ObjectHideFlags: 0
