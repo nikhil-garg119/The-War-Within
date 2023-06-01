@@ -28,6 +28,7 @@ public class SpawnMinotaurs : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         minotaurInstance=Instantiate(minotaurPrefab,this.transform.position,this.transform.rotation);
+        this.transform.position=new Vector3(transform.position.x+Random.Range(-10,10),transform.position.y,transform.position.z+Random.Range(-10,10));
         IsDead=false;
         c++;
     }
