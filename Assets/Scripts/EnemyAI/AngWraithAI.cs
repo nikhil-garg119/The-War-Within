@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 
 public class AngWraithAI : MonoBehaviour
 {
-    public NavMeshAgent agent;
+   NavMeshAgent agent;
 
     public Transform player;
 
@@ -37,9 +37,9 @@ public class AngWraithAI : MonoBehaviour
     {
         //player = GameObject.Find("PlayerObj").transform;
         agent = GetComponent<NavMeshAgent>();
-        animator=GetComponent<Animator>();
-        audio=GetComponent<AudioSource>();
-        originalClip=audio.clip;
+        // animator=GetComponent<Animator>();
+        // audio=GetComponent<AudioSource>();
+        // originalClip=audio.clip;
     }
 
     private void Update()
@@ -66,7 +66,7 @@ public class AngWraithAI : MonoBehaviour
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f || transform.position.x!=walkPoint.x)
+        if (distanceToWalkPoint.magnitude < 1f)
             walkPointSet = false;
             
             
@@ -75,9 +75,9 @@ public class AngWraithAI : MonoBehaviour
     {
         //Calculate random point in range
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
-        //float randomX = Random.Range(-walkPointRange, walkPointRange);
+        float randomX = Random.Range(-walkPointRange, walkPointRange);
 
-        walkPoint = new Vector3(transform.position.x, transform.position.y, transform.position.z + randomZ);
+        walkPoint = new Vector3(transform.position.x+randomX, transform.position.y, transform.position.z + randomZ);
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
             walkPointSet = true;
