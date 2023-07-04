@@ -95,6 +95,7 @@ public class PlayerMovementScript : MonoBehaviour {
 
 		Jumping ();
 
+
 		Crouching();
 
 		WalkingSound ();
