@@ -33,7 +33,7 @@ public class BulletScript : MonoBehaviour {
 					Destroy(gameObject);
 				}
 			}
-			if(hit.transform.CompareTag("Minotaurs")){
+			if(hit.transform.CompareTag("Minotaurs") || hit.transform.CompareTag("AngWraiths")){
 				hit.transform.gameObject.GetComponent<Damage>().health-=10f;
 				Instantiate(bloodEffect, hit.point, Quaternion.LookRotation(hit.normal));
 			}

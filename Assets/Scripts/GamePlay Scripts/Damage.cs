@@ -38,7 +38,8 @@ public class Damage : MonoBehaviour
                 IsDead=true;
             }
         //Animation Code To-Be-Added-Later
-
+        //if(this.gameObject.CompareTag("AngWraiths"))
+        Destroy(this.gameObject);
     }}
     IEnumerator KillAnim()
     {

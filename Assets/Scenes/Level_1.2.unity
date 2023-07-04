@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.09
@@ -405,11 +405,15 @@ PrefabInstance:
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: fireballPrefab
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
+    - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 446415941750677634, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: m_Name
       value: WrathMaster Variant
@@ -482,11 +486,15 @@ PrefabInstance:
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: fireballPrefab
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
+    - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 446415941750677634, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: m_Name
       value: WrathMaster Variant (4)
@@ -772,11 +780,15 @@ PrefabInstance:
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: fireballPrefab
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
+    - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 446415941750677634, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: m_Name
       value: WrathMaster Variant (2)
@@ -1537,11 +1549,15 @@ PrefabInstance:
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: fireballPrefab
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
+    - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 446415941750677634, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: m_Name
       value: WrathMaster Variant (1)
@@ -2467,11 +2483,15 @@ PrefabInstance:
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: fireballPrefab
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
+    - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 446415941750677634, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: m_Name
       value: WrathMaster Variant (3)
@@ -2548,11 +2568,15 @@ PrefabInstance:
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
     - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: fireballPrefab
       value: 
-      objectReference: {fileID: 1397913009}
+      objectReference: {fileID: 2382235396146100637, guid: b676dc654e331214da8cc9bb177c57e1, type: 3}
+    - target: {fileID: 1485237940, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
+      propertyPath: timeBetweenAttacks
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 446415941750677634, guid: 0b52da462d2e19b48847e155f8529ea2, type: 3}
       propertyPath: m_Name
       value: WrathMaster
