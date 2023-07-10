@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KillManager : MonoBehaviour
 {
@@ -16,5 +17,7 @@ public class KillManager : MonoBehaviour
     void Update()
     {
         killcount=totalOriginalWraiths-GameObject.FindGameObjectsWithTag("AngWraiths").Length;
+        if((totalOriginalWraiths-killcount)==0)
+        SceneManager.LoadScene(3);
     }
 }

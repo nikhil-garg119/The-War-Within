@@ -18,7 +18,10 @@ SceneManager.LoadScene(x);
 void OnCollisionEnter(Collision other)
 {
     if(other.gameObject.CompareTag("Player"))
-    SceneManager.LoadScene(1);
+    SceneManager.LoadScene(2);
 }
-
+public void Quit()
+{
+    Application.Quit();
+}
 }

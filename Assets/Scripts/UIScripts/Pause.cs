@@ -16,6 +16,8 @@ public class Pause : MonoBehaviour
     private int extraSpawners=0;
     void Start()
     {
+        Cursor.visible=false;
+        Cursor.lockState=CursorLockMode.Locked;
         Resume.onClick.AddListener(resume);
         difficultySetting.onValueChanged.AddListener(delegate {
             DropdownValueChanged(difficultySetting);});
