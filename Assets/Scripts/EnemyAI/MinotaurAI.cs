@@ -24,6 +24,7 @@ public class MinotaurAI : MonoBehaviour
     public float timeBetweenAttacks;
     bool alreadyAttacked;
     bool alreadyCharged;
+   
     public GameObject projectile;
 
     //States
@@ -36,6 +37,7 @@ public class MinotaurAI : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         animator=GetComponentInChildren<Animator>();
         player=GameObject.FindWithTag("Player").transform;
+        
         //lineRenderer=GetComponent<LineRenderer>();
     // 
     }
@@ -124,11 +126,12 @@ public class MinotaurAI : MonoBehaviour
         transform.LookAt(player);
         Vector3 playerPos=player.transform.position;
         animator.SetBool("Walk",false);
-        animator.SetBool("Charge",true);
+       
         
         if (!alreadyCharged)
         {
              agent.SetDestination(playerPos);
+              animator.SetBool("Charge",true);
             //  lineRenderer.SetPosition(0,this.transform.position);
             //  lineRenderer.SetPosition(1,playerPos);
             agent.speed*=3f;

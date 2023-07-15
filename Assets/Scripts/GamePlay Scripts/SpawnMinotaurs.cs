@@ -9,10 +9,13 @@ public class SpawnMinotaurs : MonoBehaviour
     GameObject minotaurInstance;
     bool IsDead=false;
     public int WaveThreshold;
+    managerKill mk;
     int c=0;
     void Start()
     {
         minotaurInstance=Instantiate(minotaurPrefab,this.transform.position,this.transform.rotation);
+        mk=FindObjectOfType<managerKill>();
+         mk.enemies.Add(minotaurInstance);
     }
 
     // Update is called once per frame
@@ -28,6 +31,7 @@ public class SpawnMinotaurs : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         minotaurInstance=Instantiate(minotaurPrefab,this.transform.position,this.transform.rotation);
+        mk.enemies.Add(minotaurInstance);
         this.transform.position=new Vector3(transform.position.x+Random.Range(-10,10),transform.position.y,transform.position.z+Random.Range(-10,10));
         IsDead=false;
         c++;

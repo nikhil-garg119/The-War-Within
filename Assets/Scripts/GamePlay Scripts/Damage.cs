@@ -11,13 +11,17 @@ public class Damage : MonoBehaviour
     public float health;
     public Slider slider;
     Animator animator;
+    managerKill mk;
     private bool IsDead=false;
 
     void Start()
     {
         slider.maxValue=health;
         if(this.gameObject.CompareTag("Minotaurs"))
+        {
         animator=GetComponent<Animator>();
+        mk=FindObjectOfType<managerKill>();
+    }
     }
 
     // Update is called once per frame
@@ -45,6 +49,7 @@ public class Damage : MonoBehaviour
     {
         this.gameObject.GetComponent<MinotaurAI>().enabled=false;
          this.gameObject.GetComponent<UnityEngine.AI.NavMeshAgent>().enabled=false;
+         mk.enemies.Remove(this.gameObject);
         yield return new WaitForSeconds(5f);
         Destroy(this.gameObject);
     }

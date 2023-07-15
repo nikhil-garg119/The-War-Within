@@ -10,11 +10,12 @@ public class SensiChange : MonoBehaviour
     public MouseLookScript mls;
     void Start()
     {
+        slider.value=mls.mouseSensitvity;
     }
 
     // Update is called once per frame
     void Update()
     {
-        slider.value=mls.mouseSensitvity;
+        mls.mouseSensitvity=slider.value;
     }
 }
