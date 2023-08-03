@@ -81,7 +81,7 @@ public class GunScript : MonoBehaviour {
 	Update loop calling for methods that are descriped below where they are initiated.
 	*/
 	void Update(){
-
+		if(!Pause.isPaused){
 		Animations();
 
 		GiveCameraScriptMySensitvity();
@@ -95,7 +95,7 @@ public class GunScript : MonoBehaviour {
 		Sprint(); //iff we have the gun you sprint from here, if we are gunless then its called from movement script
 
 		CrossHairExpansionWhenWalking();
-
+		}
 
 	}
 
@@ -105,6 +105,7 @@ public class GunScript : MonoBehaviour {
 	*Calculation of weapon position when aiming or not aiming.
 	*/
 	void FixedUpdate(){
+		if(!Pause.isPaused){
 		RotationGun ();
 
 		MeeleAnimationsStates ();
@@ -132,7 +133,7 @@ public class GunScript : MonoBehaviour {
 			cameraComponent.fieldOfView = Mathf.SmoothDamp(cameraComponent.fieldOfView, cameraZoomRatio_notAiming, ref cameraZoomVelocity, gunAimTime);
 			secondCamera.fieldOfView = Mathf.SmoothDamp(secondCamera.fieldOfView, secondCameraZoomRatio_notAiming, ref secondCameraZoomVelocity, gunAimTime);
 		}
-
+		}
 	}
 
 	[Header("Sensitvity of the gun")]

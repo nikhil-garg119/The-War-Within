@@ -6,7 +6,7 @@ public enum MenuStyle{
 	horizontal,vertical
 }
 
-public class GunInventory : MonoBehaviour {
+ class GunInventory : MonoBehaviour {
 	[Tooltip("Current weapon gameObject.")]
 	public GameObject currentGun;
 	private Animator currentHAndsAnimator;
@@ -47,12 +47,12 @@ public class GunInventory : MonoBehaviour {
 	 * overcomes 0.0f. 
 	 */
 	void Update(){
-
+		if(!Pause.isPaused){
 		switchWeaponCooldown += 1 * Time.deltaTime;
 		if(switchWeaponCooldown > 1.2f && Input.GetKey(KeyCode.LeftShift) == false){
 			Create_Weapon();
 		}
-
+		}
 	}
 
 

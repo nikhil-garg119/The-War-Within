@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 
 public class MouseLookScript : MonoBehaviour {
@@ -57,6 +58,7 @@ public class MouseLookScript : MonoBehaviour {
 	}
 	[Tooltip("Current mouse sensivity, changes in the weapon properties")]
 	public float mouseSensitvity = 0;
+	public Slider slider;
 	[HideInInspector]
 	public float mouseSensitvity_notAiming = 300;
 	[HideInInspector]
@@ -72,13 +74,24 @@ void FixedUpdate(){
 	 * Reduxing mouse sensitvity if we are aiming.
 	 */
 	if(Input.GetAxis("Fire2") != 0){
+		if(slider!=null)
+		mouseSensitvity = mouseSensitvity_aiming*slider.value;
+		else
 		mouseSensitvity = mouseSensitvity_aiming;
 	}
 	else if(GetComponent<PlayerMovementScript>().maxSpeed > 5){
+		if(slider!=null)
+		mouseSensitvity = mouseSensitvity_notAiming*slider.value;
+		else
 		mouseSensitvity = mouseSensitvity_notAiming;
+	
 	}
 	else{
+		if(slider!=null)
+		mouseSensitvity = mouseSensitvity_notAiming*slider.value;
+		else
 		mouseSensitvity = mouseSensitvity_notAiming;
+		
 	}
 
 

@@ -593,13 +593,13 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 8
-  fireballPrefab: {fileID: 0}
+  fireballPrefab: {fileID: 2382235396146100637, guid: 104d7ea72e4b34c4d85cd086ba80d35e, type: 3}
   health: 0
   audioClip: {fileID: 8300000, guid: 7fee674245a6add4cba62ba67ed85e28, type: 3}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 10
   timeBetweenAttacks: 0
-  projectile: {fileID: 0}
+  projectile: {fileID: 2382235396146100637, guid: 104d7ea72e4b34c4d85cd086ba80d35e, type: 3}
   sightRange: 20
   attackRange: 10
   playerInSightRange: 0

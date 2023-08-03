@@ -101,7 +101,7 @@ public class AngWraithAI : MonoBehaviour
             Rigidbody rb=Instantiate(fireballPrefab,this.transform.position,this.transform.rotation).GetComponent<Rigidbody>();
             rb.AddForce(100f*transform.forward,ForceMode.Impulse);
             ///End of attack code
-            
+            Debug.Log("S");
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }

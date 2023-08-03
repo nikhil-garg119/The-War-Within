@@ -24,6 +24,7 @@ public class SplashDamage : MonoBehaviour
     void Update()
     {
         if(Physics.CheckSphere(this.transform.position,DamageRadius,whatIsPlayer)){
+        
         player.GetComponent<Damage>().health-=damage;
         vol.GetComponent<Volume>().weight=1;
         Destroy(this.gameObject);
@@ -33,7 +34,9 @@ public class SplashDamage : MonoBehaviour
         Destroy(this.gameObject);
     }
    
-    }
+    
+   
+}
     
 
 

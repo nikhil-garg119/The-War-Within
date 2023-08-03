@@ -8,7 +8,7 @@ public class SceneChanger : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        Cursor.visible=true;
+        
     }
     public void OnClick(int x)
 {

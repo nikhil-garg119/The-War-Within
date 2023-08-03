@@ -8,6 +8,9 @@ public class Pause : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject pauseMenu;
+    public GameObject player;
+    public static bool isPaused=false;
+
     public Dropdown difficultySetting;
     public GameObject[] extraSpawner;
     public AudioSource audio;
@@ -36,11 +39,15 @@ public class Pause : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape)){
+            if(!isPaused){
+                isPaused=true;
         pauseMenu.SetActive(true);
         Time.timeScale=0;
+        player.GetComponent<PlayerMovementScript>().enabled=false;
+        player.GetComponent<MouseLookScript>().enabled=false;
         Cursor.visible=true;
         Cursor.lockState=CursorLockMode.None;
-        
+            }
 
     }
     audio.volume=slider.value;}
@@ -48,6 +55,9 @@ public class Pause : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Cursor.visible=false;
+        isPaused=false;
+        player.GetComponent<PlayerMovementScript>().enabled=true;
+        player.GetComponent<MouseLookScript>().enabled=true;
         Cursor.lockState=CursorLockMode.Locked;
         Time.timeScale=1;
 
