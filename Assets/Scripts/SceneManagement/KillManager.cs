@@ -18,6 +18,6 @@ public class KillManager : MonoBehaviour
     {
         killcount=totalOriginalWraiths-GameObject.FindGameObjectsWithTag("AngWraiths").Length;
         if((totalOriginalWraiths-killcount)==0)
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(0);
     }
 }

@@ -48,6 +48,8 @@ public class Pause : MonoBehaviour
         Cursor.visible=true;
         Cursor.lockState=CursorLockMode.None;
             }
+            else
+            resume();
 
     }
     audio.volume=slider.value;}

@@ -128,7 +128,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 16
+  whatIsGround: Ground
   damage: 10

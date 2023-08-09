@@ -7,7 +7,7 @@ public class DirectDamage: MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]private GameObject player;
-    [SerializeField]private LayerMask whatIsGround;
+    [SerializeField]private string whatIsGround;
     [SerializeField]private float damage;
     
 
@@ -26,6 +26,8 @@ public class DirectDamage: MonoBehaviour
         
         Destroy(this.gameObject);
     }
+    if(other.gameObject.CompareTag(whatIsGround))
+    Destroy(this.gameObject);
 }}
     
 

@@ -9,6 +9,7 @@ TagManager:
   - Wraiths
   - Minotaurs
   - AngWraiths
+  - Ground
   layers:
   - Default
   - TransparentFX
