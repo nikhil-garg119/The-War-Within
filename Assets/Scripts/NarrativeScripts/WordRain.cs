@@ -10,32 +10,39 @@ public class WordRain : MonoBehaviour
     public List<string> words;
     public GameObject textPrefab;
     public Transform canvas;
-    public List<Color> colors=new List<Color>();
+    
     private List<Text> texts=new List<Text>();
 
-    void Start()
+    void OnTriggerEnter(Collider other)
     {
-        for(int i=0;i<noOfWords;i++)
-        {
-            Text t=Instantiate(textPrefab,this.transform.position,Quaternion.identity).GetComponent<Text>();
-            t.gameObject.AddComponent<Rigidbody>();
-            t.transform.SetParent(canvas);
-            texts.Add(t);
-            t.gameObject.SetActive(false);
-
-        }
+        if(other.gameObject.CompareTag("Player")){
         StartCoroutine("Words");
+        return;}
+
+        //Debug.Log("E");
     }
+    
+       
+        
+    
     IEnumerator Words()
     {
         for(int i=0;i<noOfWords;i++)
         {
+            
+            float x=Random.Range(this.transform.position.x+200,this.transform.position.x-200);
+            Text t=Instantiate(textPrefab,new Vector3(x,this.transform.position.y,this.transform.position.z),Quaternion.identity).GetComponent<Text>();
+             t.transform.SetParent(canvas,false);
+            t.gameObject.AddComponent<Rigidbody>();
+            
+            texts.Add(t);
             texts[i].text=words[i];
-            texts[i].gameObject.SetActive(true);
             texts[i].gameObject.GetComponent<Rigidbody>().AddForce(-Vector3.up*25,ForceMode.Impulse);
             //texts[i].color=colors[Random.Range(0,3)];
             yield return new WaitForSeconds(1f);
         }
+        yield return new WaitForSeconds(4f);
+        StartCoroutine("DeleteWords");
         // for(int i=0;i<noOfWords;i++)
         // {
         //     if(texts[i].GetComponent<RectTransform>().y<=100)
@@ -44,6 +51,15 @@ public class WordRain : MonoBehaviour
         //         texts[i].transform.position=this.transform.position;
         //     }
         // }
+    }
+    IEnumerator DeleteWords()
+    {
+        for(int i=0;i<texts.Count;i++)
+        {
+            Destroy(texts[i].gameObject);
+            yield return new WaitForSeconds(0.2f);
+        }
+       
     }
 
     // Update is called once per frame
